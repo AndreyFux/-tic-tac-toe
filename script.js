@@ -41,142 +41,44 @@ boxDiv[i].onclick = () =>{
         }
     }
     // ПРОВЕРКА НА ПОБЕДУ
-    if(boxDiv[0].innerHTML==="X"&&boxDiv[1].innerHTML==="X" && boxDiv[2].innerHTML==="X"){
-        clearDiv()
-        let mainDiv1 = document.createElement('div');
-        mainDiv1.innerHTML = "ПОБЕДА ИГРОКА X!";
-        mainDiv1.style.paddingTop = "60px";
-        document.body.append(mainDiv1);
-        
-    }
-    else if(boxDiv[3].innerHTML==="X"&&boxDiv[4].innerHTML==="X" && boxDiv[5].innerHTML==="X"){
-        clearDiv()
-        let mainDiv1 = document.createElement('div');
-        mainDiv1.innerHTML = "ПОБЕДА ИГРОКА X!";
-        mainDiv1.style.paddingTop = "60px";
-        document.body.append(mainDiv1);
-        
-    }
-    else if(boxDiv[6].innerHTML==="X"&&boxDiv[7].innerHTML==="X" && boxDiv[8].innerHTML==="X"){
-        setTimeout(clearDiv, 1000);clearDiv();
-        let mainDiv1 = document.createElement('div');
-        mainDiv1.innerHTML = "ПОБЕДА ИГРОКА X!";
-        mainDiv1.style.paddingTop = "60px";
-        document.body.append(mainDiv1);
-    }
-    else if(boxDiv[0].innerHTML==="X"&&boxDiv[3].innerHTML==="X" && boxDiv[6].innerHTML==="X"){
-        setTimeout(clearDiv, 1000);
-        let mainDiv1 = document.createElement('div');
-        mainDiv1.innerHTML = "ПОБЕДА ИГРОКА X!";
-        mainDiv1.style.paddingTop = "60px";
-        document.body.append(mainDiv1);
-    }
-    else if(boxDiv[1].innerHTML==="X"&&boxDiv[4].innerHTML==="X" && boxDiv[7].innerHTML==="X"){
-        setTimeout(clearDiv, 1000);
-        let mainDiv1 = document.createElement('div');
-        mainDiv1.innerHTML = "ПОБЕДА ИГРОКА X!";
-        mainDiv1.style.paddingTop = "60px";
-        document.body.append(mainDiv1);
-    }
-    else if(boxDiv[2].innerHTML==="X"&&boxDiv[5].innerHTML==="X" && boxDiv[8].innerHTML==="X"){
-        setTimeout(clearDiv, 1000);
-        let mainDiv1 = document.createElement('div');
-        mainDiv1.innerHTML = "ПОБЕДА ИГРОКА X!";
-        mainDiv1.style.paddingTop = "60px";
-        document.body.append(mainDiv1);
-    }
-    else if(boxDiv[0].innerHTML==="X"&&boxDiv[4].innerHTML==="X" && boxDiv[8].innerHTML==="X"){
-        setTimeout(clearDiv, 1000);
-        let mainDiv1 = document.createElement('div');
-        mainDiv1.innerHTML = "ПОБЕДА ИГРОКА X!";
-        mainDiv1.style.paddingTop = "60px";
-        document.body.append(mainDiv1);
-    }
-    else if(boxDiv[2].innerHTML==="X"&&boxDiv[4].innerHTML==="X" && boxDiv[6].innerHTML==="X"){
-        setTimeout(clearDiv, 1000);
-        let mainDiv1 = document.createElement('div');
-        mainDiv1.innerHTML = "ПОБЕДА ИГРОКА X!";
-        mainDiv1.style.paddingTop = "60px";
-        document.body.append(mainDiv1);
-    }
-
-    else if(boxDiv[0].innerHTML==="0"&&boxDiv[1].innerHTML==="0" && boxDiv[2].innerHTML==="0"){
-        setTimeout(clearDiv, 1000);
-        let mainDiv1 = document.createElement('div');
-        mainDiv1.innerHTML = "ПОБЕДА ИГРОКА 0!";
-        mainDiv1.style.paddingTop = "60px";
-        document.body.append(mainDiv1);
-    }
-    else if(boxDiv[3].innerHTML==="0"&&boxDiv[4].innerHTML==="0" && boxDiv[5].innerHTML==="0"){
-        setTimeout(clearDiv, 1000);
-        let mainDiv1 = document.createElement('div');
-        mainDiv1.innerHTML = "ПОБЕДА ИГРОКА 0!";
-        mainDiv1.style.paddingTop = "60px";
-        document.body.append(mainDiv1);
-    }
-    else if(boxDiv[6].innerHTML==="0"&&boxDiv[7].innerHTML==="0" && boxDiv[8].innerHTML==="0"){
-        setTimeout(clearDiv, 1000);
-        let mainDiv1 = document.createElement('div');
-        mainDiv1.innerHTML = "ПОБЕДА ИГРОКА 0!";
-        mainDiv1.style.paddingTop = "60px";
-        document.body.append(mainDiv1);
-    }
-    else if(boxDiv[0].innerHTML==="0"&&boxDiv[3].innerHTML==="0" && boxDiv[6].innerHTML==="0"){
-        setTimeout(clearDiv, 1000);
-        let mainDiv1 = document.createElement('div');
-        mainDiv1.innerHTML = "ПОБЕДА ИГРОКА 0!";
-        mainDiv1.style.paddingTop = "60px";
-        document.body.append(mainDiv1);
-    }
-    else if(boxDiv[1].innerHTML==="0"&&boxDiv[4].innerHTML==="0" && boxDiv[7].innerHTML==="0"){
-        setTimeout(clearDiv, 1000);
-        let mainDiv1 = document.createElement('div');
-        mainDiv1.innerHTML = "ПОБЕДА ИГРОКА 0!";
-        mainDiv1.style.paddingTop = "60px";
-        document.body.append(mainDiv1);
-    }
-    else if(boxDiv[2].innerHTML==="0"&&boxDiv[5].innerHTML==="0" && boxDiv[8].innerHTML==="0"){
-        setTimeout(clearDiv, 1000);
-        let mainDiv1 = document.createElement('div');
-        mainDiv1.innerHTML = "ПОБЕДА ИГРОКА 0!";
-        mainDiv1.style.paddingTop = "60px";
-        document.body.append(mainDiv1);
-    }
-    else if(boxDiv[0].innerHTML==="0"&&boxDiv[4].innerHTML==="0" && boxDiv[8].innerHTML==="0"){
-        setTimeout(clearDiv, 1000);
-        let mainDiv1 = document.createElement('div');
-        mainDiv1.innerHTML = "ПОБЕДА ИГРОКА 0!";
-        mainDiv1.style.paddingTop = "60px";
-        document.body.append(mainDiv1);
-    }
-    else if(boxDiv[2].innerHTML==="0"&&boxDiv[4].innerHTML==="0" && boxDiv[6].innerHTML==="0"){
-        setTimeout(clearDiv, 1000);
-        let mainDiv1 = document.createElement('div');
-        mainDiv1.innerHTML = "ПОБЕДА ИГРОКА 0!";
-        mainDiv1.style.paddingTop = "60px";
-        document.body.append(mainDiv1);
-    }
-    else if (boxDiv.map(el => el.innerText).every(item => item !== '')){
-        setTimeout(clearDiv, 1000);
-        let mainDiv1 = document.createElement('div');
-        mainDiv1.innerHTML = "НИЧЬЯ";
-        mainDiv1.style.paddingTop = "60px";
-        document.body.append(mainDiv1);
-        
+    if( boxDiv[0].innerHTML==="X"&&boxDiv[1].innerHTML==="X" && boxDiv[2].innerHTML==="X" ||  //ПОБЕДА X
+        boxDiv[3].innerHTML==="X"&&boxDiv[4].innerHTML==="X" && boxDiv[5].innerHTML==="X" ||
+        boxDiv[6].innerHTML==="X"&&boxDiv[7].innerHTML==="X" && boxDiv[8].innerHTML==="X" ||
+        boxDiv[0].innerHTML==="X"&&boxDiv[3].innerHTML==="X" && boxDiv[6].innerHTML==="X" ||
+        boxDiv[1].innerHTML==="X"&&boxDiv[4].innerHTML==="X" && boxDiv[7].innerHTML==="X" ||
+        boxDiv[2].innerHTML==="X"&&boxDiv[5].innerHTML==="X" && boxDiv[8].innerHTML==="X" ||
+        boxDiv[0].innerHTML==="X"&&boxDiv[4].innerHTML==="X" && boxDiv[8].innerHTML==="X" ||
+        boxDiv[2].innerHTML==="X"&&boxDiv[4].innerHTML==="X" && boxDiv[6].innerHTML==="X"
+        ){
+            clearDiv()
+            let mainDiv1 = document.createElement('div');
+            mainDiv1.innerHTML = "ПОБЕДА ИГРОКА X!";
+            mainDiv1.style.paddingTop = "60px";
+            document.body.append(mainDiv1);
+        }
+    else if(boxDiv[0].innerHTML==="0"&&boxDiv[1].innerHTML==="0" && boxDiv[2].innerHTML==="0" || //ПОБЕДА 0
+        boxDiv[3].innerHTML==="0"&&boxDiv[4].innerHTML==="0" && boxDiv[5].innerHTML==="0" ||
+        boxDiv[6].innerHTML==="0"&&boxDiv[7].innerHTML==="0" && boxDiv[8].innerHTML==="0" ||
+        boxDiv[0].innerHTML==="0"&&boxDiv[3].innerHTML==="0" && boxDiv[6].innerHTML==="0" ||
+        boxDiv[1].innerHTML==="0"&&boxDiv[4].innerHTML==="0" && boxDiv[7].innerHTML==="0" ||
+        boxDiv[2].innerHTML==="0"&&boxDiv[5].innerHTML==="0" && boxDiv[8].innerHTML==="0" ||
+        boxDiv[0].innerHTML==="0"&&boxDiv[4].innerHTML==="0" && boxDiv[8].innerHTML==="0" ||
+        boxDiv[2].innerHTML==="0"&&boxDiv[4].innerHTML==="0" && boxDiv[6].innerHTML==="0"
+        ){
+            clearDiv()
+            let mainDiv1 = document.createElement('div');
+            mainDiv1.innerHTML = "ПОБЕДА ИГРОКА 0!";
+            mainDiv1.style.paddingTop = "60px";
+            document.body.append(mainDiv1);
+        }
+    else if (boxDiv.map(el => el.innerText).every(item => item !== '')){   //НИЧЬЯ
+            setTimeout(clearDiv, 1000);
+            let mainDiv1 = document.createElement('div');
+            mainDiv1.innerHTML = "НИЧЬЯ";
+            mainDiv1.style.paddingTop = "60px";
+            document.body.append(mainDiv1);
+        }
     }
 }
-
-}
-// let a = [1,2,3,1,1,1,4,5,5,4];
-// let b = 1;
-// for (let i=0;i<a.length;i++){
-//     while(b<a.length){
-//         if(a[i]===a[i+b]){
-//             a.splice(a[i], 1);
-//         }
-//         b = b+1;
-//     }
-// }
-// console.log(a);
 
 
